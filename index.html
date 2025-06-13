@@ -47,28 +47,27 @@
       border-radius: 5px;
     }
 
-    /* 🟢 کد اضافه‌شده برای نمایش عکس بالا سمت چپ */
+    /* 🟢 عکس PNG بالا سمت چپ هم‌عرض container با فاصله از متن */
     .top-left-png {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      width: 33.33%;
-      max-width: 360px;
+      display: block;
+      margin: 0 auto 20px auto;
+      max-width: 400px;
+      width: 100%;
       border-radius: 5px;
     }
 
-    /* 🟢 برای ریسپانسیو بودن در موبایل */
+    /* 🟢 در موبایل */
     @media (max-width: 480px) {
       .top-left-png {
-        width: 80%;
-        left: 10%;
+        width: 100%;
+        max-width: 100%;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- 🟢 عکس PNG بالا سمت چپ -->
+  <!-- 🟢 عکس PNG بالا سمت چپ با فاصله از متن -->
   <img src="https://i.postimg.cc/RZK4GsQ8/visa-1-6-copy.png" alt="PNG Image" class="top-left-png">
 
   <div class="container">
