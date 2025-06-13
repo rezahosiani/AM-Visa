@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visa Information</title>
   <style>
     body {
@@ -10,7 +10,6 @@
       text-align: center;
       background-color: #f9f9f9;
       padding: 20px;
-      padding-left: 90px; /* فضای کافی از چپ برای عکس ثابت */
     }
     .container {
       background: white;
@@ -48,33 +47,32 @@
       border-radius: 5px;
     }
 
-    /* عکس PNG بالا سمت چپ نصف اندازه و ثابت */
+    /* 🟢 عکس PNG بالا سمت چپ هم‌عرض container با فاصله از متن */
     .top-left-png {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      width: 50px; /* نصف سایز اصلی */
-      height: auto;
+      display: block;
+      margin: 0 auto 20px auto;
+      max-width: 400px;
+      width: 100%;
       border-radius: 5px;
-      z-index: 1000;
     }
 
-    /* موبایل */
+    /* 🟢 در موبایل */
     @media (max-width: 480px) {
       .top-left-png {
-        width: 40px; /* کمی کوچکتر در موبایل */
+        width: 100%;
+        max-width: 100%;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- عکس PNG بالا سمت چپ با اندازه نصف شده و ثابت -->
-  <img src="https://i.postimg.cc/RZK4GsQ8/visa-1-6-copy.png" alt="PNG Image" class="top-left-png" />
+  <!-- 🟢 عکس PNG بالا سمت چپ با فاصله از متن -->
+  <img src="https://i.postimg.cc/RZK4GsQ8/visa-1-6-copy.png" alt="PNG Image" class="top-left-png">
 
   <div class="container">
     <h2>Visa Reference Number - 88005075797</h2>
-    <img src="https://i.postimg.cc/63ZmJTM5/visa-1-6-copy.jpg" alt="Visa Image" />
+    <img src="https://i.postimg.cc/63ZmJTM5/visa-1-6-copy.jpg=">
     <div class="info">
       <strong>NAME</strong>
       <p>Attaee Ahmad Jawid</p>
