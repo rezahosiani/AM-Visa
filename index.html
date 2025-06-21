@@ -10,11 +10,12 @@
 
   <style>
     body {
-      font-family: 'Poppins', sans-serif; /* 🟢 اصلاح‌شده */
+      font-family: 'Poppins', sans-serif;
       text-align: center;
       background-color: #f9f9f9;
       padding: 20px;
     }
+
     .container {
       background: white;
       padding: 20px;
@@ -23,25 +24,27 @@
       max-width: 400px;
       margin: auto;
     }
+
     img {
       width: 120px;
       border-radius: 5px;
       margin-bottom: 10px;
     }
+
     h2 {
       color: #0073e6;
     }
-    .info {
-      text-align: center;
-      font-size: 16px;
+
+    .info-block {
+      margin-bottom: 16px; /* 🟢 فاصله بین هر جفت اطلاعات */
+    }
+
+    .info-block p {
+      margin: 0;
+      font-size: 14px;
       color: #626262;
     }
-    .info strong {
-      display: block;
-      margin-top: 10px;
-      font-size: 16px;
-      font-weight: bold;
-    }
+
     .button {
       background-color: #0056b3;
       color: white;
@@ -52,7 +55,6 @@
       border-radius: 5px;
     }
 
-    /* 🟢 عکس PNG بالا سمت چپ هم‌عرض container با فاصله از متن */
     .top-left-png {
       display: block;
       margin: 0 auto 20px auto;
@@ -61,7 +63,6 @@
       border-radius: 5px;
     }
 
-    /* 🟢 در موبایل */
     @media (max-width: 480px) {
       .top-left-png {
         width: 100%;
@@ -78,33 +79,57 @@
   <div class="container">
     <h2>Visa Reference Number - 88005075797</h2>
     <img src="https://i.postimg.cc/63ZmJTM5/visa-1-6-copy.jpg=">
-    <div class="info">
+
+    <div class="info-block">
       <p>NAME</p>
       <p>Attaee Ahmad Jawid</p>
+    </div>
 
-<div class="info-block">
-  <p>Passport No</p>
-  <p>P02127628</p>
-</div>
+    <div class="info-block">
+      <p>Passport No</p>
+      <p>P02127628</p>
+    </div>
 
+    <div class="info-block">
       <p>Passport Country</p>
       <p>Afghanistan</p>
+    </div>
+
+    <div class="info-block">
       <p>Visa Category</p>
       <p>Family Visit</p>
+    </div>
+
+    <div class="info-block">
       <p>Visa Sub Category</p>
       <p>Family Visit</p>
+    </div>
+
+    <div class="info-block">
       <p>Application Type</p>
       <p>Extension</p>
+    </div>
+
+    <div class="info-block">
       <p>Staying Facility</p>
       <p>Single Entry</p>
+    </div>
+
+    <div class="info-block">
       <p>Visa Start Date</p>
       <p>12 Jun 2025</p>
+    </div>
+
+    <div class="info-block">
       <p>Visa End Date</p>
       <p>11 Jul 2025</p>
+    </div>
+
+    <div class="info-block">
       <p>Visa Duration</p>
       <p>30 day(s)</p>
     </div>
-    <a href="https://visa.nadra.gov.pk/e-visa/verifyD.xhtml#" class="button">Back to Login</a>
+
   </div>
 </body>
 </html>
